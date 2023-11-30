@@ -1,0 +1,488 @@
+INFO - 2023-05-22 06:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 06:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-22 06:53:50 --> Attempt to read property "amount" on null
+in APPPATH\Views\pages\invoice\new_invoice.php on line 245.
+ 1 APPPATH\Views\pages\invoice\new_invoice.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "amount" on null', 'C:\\laragon\\www\\template\\app\\Views\\pages\\invoice\\new_invoice.php', 245)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\template\\app\\Views\\pages\\invoice\\new_invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/invoice/new_invoice', [], true)
+ 5 APPPATH\Controllers\Invoice.php(58): view('pages/invoice/new_invoice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->new_invoice('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-22 07:00:39 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Invoice.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\template\\app\\Controllers\\Invoice.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Invoice')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Invoice')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Invoice', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:01:48 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_sys.py.created_at'; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT sum(py.a...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(py.a...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(py.a...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT sum(py.a...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\template\app\Controllers\Invoice.php(59): App\Models\PaymentModel->getInvoicePAyments('5')
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->new_invoice('5')
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-22 07:01:48 --> In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'db_sys.py.created_at'; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT sum(py.amount) as amount, `py`.`created_at`, `py`.`financial_account`, `py`.`payment_method`
+FROM `payments` `py`
+WHERE `py`.`company` = \'1\'
+AND `py`.`invoice` = \'5\'
+AND `py`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(py.amount) as amount, `py`.`created_at`, `py`.`financial_account`, `py`.`payment_method`
+FROM `payments` `py`
+WHERE `py`.`company` = \'1\'
+AND `py`.`invoice` = \'5\'
+AND `py`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(py.amount) as amount, `py`.`created_at`, `py`.`financial_account`, `py`.`payment_method`
+FROM `payments` `py`
+WHERE `py`.`company` = \'1\'
+AND `py`.`invoice` = \'5\'
+AND `py`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT sum(py.amount) as amount, `py`.`created_at`, `py`.`financial_account`, `py`.`payment_method`
+FROM `payments` `py`
+WHERE `py`.`company` = :py.company:
+AND `py`.`invoice` = :py.invoice:
+AND `py`.`deleted_at` IS NULL', [...], false)
+ 5 APPPATH\Models\PaymentModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Invoice.php(59): App\Models\PaymentModel->getInvoicePAyments('5')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->new_invoice('5')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:16:25 --> mysqli_sql_exception: Unknown column 'py.name' in 'on clause' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `py`.`am...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `py`.`am...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `py`.`am...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `py`.`am...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\template\app\Controllers\Invoice.php(59): App\Models\PaymentModel->getInvoicePAyments('5')
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->new_invoice('5')
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-22 07:16:25 --> Unknown column 'py.name' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `py`.`amount` as `amount`, `py`.`created_at`, `fa`.`name`, `pm`.`name`
+FROM `payments` `py`
+JOIN `payment_methods` `pm` ON `pm`.`id` = `py`.`name`
+JOIN `financial_account` `fa` ON `fa`.`id` = `py`.`name`
+WHERE `py`.`company` = \'1\'
+AND `py`.`invoice` = \'5\'
+AND `py`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `py`.`amount` as `amount`, `py`.`created_at`, `fa`.`name`, `pm`.`name`
+FROM `payments` `py`
+JOIN `payment_methods` `pm` ON `pm`.`id` = `py`.`name`
+JOIN `financial_account` `fa` ON `fa`.`id` = `py`.`name`
+WHERE `py`.`company` = \'1\'
+AND `py`.`invoice` = \'5\'
+AND `py`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `py`.`amount` as `amount`, `py`.`created_at`, `fa`.`name`, `pm`.`name`
+FROM `payments` `py`
+JOIN `payment_methods` `pm` ON `pm`.`id` = `py`.`name`
+JOIN `financial_account` `fa` ON `fa`.`id` = `py`.`name`
+WHERE `py`.`company` = \'1\'
+AND `py`.`invoice` = \'5\'
+AND `py`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `py`.`amount` as `amount`, `py`.`created_at`, `fa`.`name`, `pm`.`name`
+FROM `payments` `py`
+JOIN `payment_methods` `pm` ON `pm`.`id` = `py`.`name`
+JOIN `financial_account` `fa` ON `fa`.`id` = `py`.`name`
+WHERE `py`.`company` = :py.company:
+AND `py`.`invoice` = :py.invoice:
+AND `py`.`deleted_at` IS NULL', [...], false)
+ 5 APPPATH\Models\PaymentModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Invoice.php(59): App\Models\PaymentModel->getInvoicePAyments('5')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->new_invoice('5')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-22 07:17:26 --> Undefined property: stdClass::$financial_account
+in APPPATH\Views\pages\invoice\new_invoice.php on line 243.
+ 1 APPPATH\Views\pages\invoice\new_invoice.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$financial_account', 'C:\\laragon\\www\\template\\app\\Views\\pages\\invoice\\new_invoice.php', 243)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\template\\app\\Views\\pages\\invoice\\new_invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/invoice/new_invoice', [], true)
+ 5 APPPATH\Controllers\Invoice.php(59): view('pages/invoice/new_invoice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->new_invoice('5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-22 07:19:08 --> Undefined variable $
+in APPPATH\Models\PaymentModel.php on line 70.
+ 1 APPPATH\Models\PaymentModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $', 'C:\\laragon\\www\\template\\app\\Models\\PaymentModel.php', 70)
+ 2 SYSTEMPATH\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount([...])
+ 3 SYSTEMPATH\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', [...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-22 07:19:25 --> Attempt to read property "balance" on null
+in APPPATH\Models\PaymentModel.php on line 70.
+ 1 APPPATH\Models\PaymentModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "balance" on null', 'C:\\laragon\\www\\template\\app\\Models\\PaymentModel.php', 70)
+ 2 SYSTEMPATH\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount([...])
+ 3 SYSTEMPATH\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', [...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-22 07:19:50 --> Attempt to read property "balance" on null
+in APPPATH\Models\PaymentModel.php on line 70.
+ 1 APPPATH\Models\PaymentModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "balance" on null', 'C:\\laragon\\www\\template\\app\\Models\\PaymentModel.php', 70)
+ 2 SYSTEMPATH\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount([...])
+ 3 SYSTEMPATH\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', [...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:25:13 --> mysqli_sql_exception: Unknown column 'fa.financial_account' in 'where clause' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `fa`.`ba...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fa`.`ba...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fa`.`ba...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `fa`.`ba...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-05-22 07:25:13 --> Call to a member function getRowObject() on bool
+in APPPATH\Models\PaymentModel.php on line 71.
+ 1 SYSTEMPATH\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount([...])
+ 2 SYSTEMPATH\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', [...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-22 07:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:28:35 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(75): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:30:43 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(76): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:31:35 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(76): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:32:15 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:32:16 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:33:18 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:33:19 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:33:56 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 07:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 07:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 07:35:13 --> mysqli_sql_exception: Unknown column 'f.financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 09:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 09:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 10:00:23 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 10:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 10:14:02 --> mysqli_sql_exception: Unknown column 'financial_account' in 'field list' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 10:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 10:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-22 10:16:00 --> mysqli_sql_exception: Duplicate entry '614.79' for key 'financial_account.financial_account_account_unique' in C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `financi...', 0)
+#1 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `financi...')
+#2 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `financi...')
+#3 C:\laragon\www\template\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `financi...', Array, false)
+#4 C:\laragon\www\template\app\Models\PaymentModel.php(77): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(1562): App\Models\PaymentModel->increaseAccount(Array)
+#6 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(792): CodeIgniter\BaseModel->trigger('afterInsert', Array)
+#7 C:\laragon\www\template\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\laragon\www\template\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\laragon\www\template\app\Controllers\Invoice.php(213): CodeIgniter\BaseModel->save(Array)
+#10 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Invoice->payment_invoice()
+#11 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Invoice))
+#12 C:\laragon\www\template\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\template\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+INFO - 2023-05-22 10:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 13:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-22 13:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
