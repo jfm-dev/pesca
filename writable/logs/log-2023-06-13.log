@@ -1,0 +1,828 @@
+INFO - 2023-06-13 09:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:01:53 --> Attempt to read property "name" on null
+in APPPATH\Views\layouts\partials\sidebar.php on line 18.
+ 1 APPPATH\Views\layouts\partials\sidebar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\laragon\\www\\pesca\\app\\Views\\layouts\\partials\\sidebar.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/partials/sidebar', null, true)
+ 5 APPPATH\Views\layouts\template.php(28): CodeIgniter\View\View->include('layouts/partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/template', [], true)
+ 9 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/dashboard', [], true)
+10 APPPATH\Controllers\Home.php(9): view('pages/dashboard')
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:06:48 --> Attempt to read property "name" on null
+in APPPATH\Views\layouts\partials\sidebar.php on line 18.
+ 1 APPPATH\Views\layouts\partials\sidebar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\laragon\\www\\pesca\\app\\Views\\layouts\\partials\\sidebar.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/partials/sidebar', null, true)
+ 5 APPPATH\Views\layouts\template.php(28): CodeIgniter\View\View->include('layouts/partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/template', [], true)
+ 9 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/dashboard', [], true)
+10 APPPATH\Controllers\Home.php(9): view('pages/dashboard')
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 09:08:36 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('joaso', 'user', Array, NULL, 'username')
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('username', 'username', 'joaso', Array, Array)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(1453): CodeIgniter\Validation\Validation->run(Array, NULL, 'default')
+#8 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(745): CodeIgniter\BaseModel->validate(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#11 C:\laragon\www\pesca\app\Controllers\User.php(46): CodeIgniter\BaseModel->save(Array)
+#12 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->save_user()
+#13 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#14 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2023-06-13 09:08:36 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `user` = \'joaso\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `user` = \'joaso\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `user` = \'joaso\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `user` = :user:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('joaso', 'user', [...], null, 'username')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('username', 'username', 'joaso', [...], [...])
+ 8 SYSTEMPATH\BaseModel.php(1453): CodeIgniter\Validation\Validation->run([...], null, 'default')
+ 9 SYSTEMPATH\BaseModel.php(745): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\User.php(46): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->save_user()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 09:11:03 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\User.php(46): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->save_user()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 09:11:03 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:11:03\', \'2023-06-13 09:11:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:11:03\', \'2023-06-13 09:11:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:11:03\', \'2023-06-13 09:11:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (:name:, :username:, :password:, :email:, :contact:, :status:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(46): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->save_user()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 09:11:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`users`, CONSTRAINT `FK_users_user_levels` FOREIGN KEY (`user_level`) REFERENCES `user_levels` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\User.php(46): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->save_user()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 09:11:35 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`users`, CONSTRAINT `FK_users_user_levels` FOREIGN KEY (`user_level`) REFERENCES `user_levels` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:11:35\', \'2023-06-13 09:11:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:11:35\', \'2023-06-13 09:11:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:11:35\', \'2023-06-13 09:11:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (:name:, :username:, :password:, :email:, :contact:, :status:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(46): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->save_user()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 09:12:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`users`, CONSTRAINT `FK_users_user_levels` FOREIGN KEY (`user_level`) REFERENCES `user_levels` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\User.php(46): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->save_user()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 09:12:03 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`users`, CONSTRAINT `FK_users_user_levels` FOREIGN KEY (`user_level`) REFERENCES `user_levels` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:12:03\', \'2023-06-13 09:12:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:12:03\', \'2023-06-13 09:12:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:12:03\', \'2023-06-13 09:12:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (:name:, :username:, :password:, :email:, :contact:, :status:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(46): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->save_user()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 09:12:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`users`, CONSTRAINT `FK_users_user_levels` FOREIGN KEY (`user_level`) REFERENCES `user_levels` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\User.php(46): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->save_user()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 09:12:23 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`users`, CONSTRAINT `FK_users_user_levels` FOREIGN KEY (`user_level`) REFERENCES `user_levels` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:12:23\', \'2023-06-13 09:12:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:12:23\', \'2023-06-13 09:12:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (\'Joao\', \'joaso\', \'aaaa\', \'joa@gmail.com\', \'87545555\', \'1\', \'2\', \'2023-06-13 09:12:23\', \'2023-06-13 09:12:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `username`, `password`, `email`, `contact`, `status`, `department`, `created_at`, `updated_at`) VALUES (:name:, :username:, :password:, :email:, :contact:, :status:, :department:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User.php(46): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->save_user()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:42:40 --> The route for "update_user" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('update_user')
+ 2 APPPATH\Views\pages\users\index.php(219): url_to('update_user')
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\users\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/users/index', [], true)
+ 6 APPPATH\Controllers\User.php(15): view('pages/users/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:43:13 --> Undefined property: stdClass::$user
+in APPPATH\Views\pages\users\index.php on line 231.
+ 1 APPPATH\Views\pages\users\index.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\users\\index.php', 231)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\users\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/users/index', [], true)
+ 5 APPPATH\Controllers\User.php(15): view('pages/users/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:55:59 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 64.
+ 1 APPPATH\Controllers\User.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\pesca\\app\\Controllers\\User.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->update_user()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 10:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 10:59:33 --> The route for "list_currency" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('list_currency')
+ 2 APPPATH\Views\layouts\partials\sidebar.php(61): url_to('list_currency')
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\partials\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/partials/sidebar', null, true)
+ 6 APPPATH\Views\layouts\template.php(28): CodeIgniter\View\View->include('layouts/partials/sidebar')
+ 7 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\template.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/template', [], true)
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/users/index', [], true)
+11 APPPATH\Controllers\User.php(15): view('pages/users/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 10:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 10:59:35 --> The route for "list_currency" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('list_currency')
+ 2 APPPATH\Views\layouts\partials\sidebar.php(61): url_to('list_currency')
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\partials\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('layouts/partials/sidebar', null, true)
+ 6 APPPATH\Views\layouts\template.php(28): CodeIgniter\View\View->include('layouts/partials/sidebar')
+ 7 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\layouts\\template.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/template', [], true)
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/users/index', [], true)
+11 APPPATH\Controllers\User.php(15): view('pages/users/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 10:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:06:16 --> Invalid file: "pages/fishing_sessions.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/fishing_sessions.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_sessions', [], true)
+ 3 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_sessions')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:06:22 --> Invalid file: "pages/fishing_session.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/fishing_session.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session', [], true)
+ 3 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:06:43 --> Undefined variable $financial
+in APPPATH\Views\pages\fishing_session\index.php on line 67.
+ 1 APPPATH\Views\pages\fishing_session\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $financial', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:06:54 --> Invalid file: "pages/fishing_session.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/fishing_session.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session', [], true)
+ 3 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:06:57 --> Undefined variable $financial
+in APPPATH\Views\pages\fishing_session\index.php on line 67.
+ 1 APPPATH\Views\pages\fishing_session\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $financial', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:07:44 --> Undefined variable $financial
+in APPPATH\Views\pages\fishing_session\index.php on line 67.
+ 1 APPPATH\Views\pages\fishing_session\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $financial', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:08:31 --> Undefined variable $method
+in APPPATH\Views\pages\fishing_session\index.php on line 107.
+ 1 APPPATH\Views\pages\fishing_session\index.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $method', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:08:49 --> The route for "save_account" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('save_account')
+ 2 APPPATH\Views\pages\fishing_session\index.php(102): url_to('save_account')
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 6 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:09:00 --> Undefined variable $currency
+in APPPATH\Views\pages\fishing_session\index.php on line 117.
+ 1 APPPATH\Views\pages\fishing_session\index.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currency', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:09:19 --> The route for "save_method" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('save_method')
+ 2 APPPATH\Views\pages\fishing_session\index.php(148): url_to('save_method')
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 6 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:09:36 --> Undefined variable $financial
+in APPPATH\Views\pages\fishing_session\index.php on line 181.
+ 1 APPPATH\Views\pages\fishing_session\index.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $financial', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 181)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:48:39 --> Allowed fields must be specified for model: "App\Models\FishingSessionModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\FishingSessionModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\FishingSession.php(22): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 11:49:24 --> mysqli_sql_exception: Table 'db_pesca.fishing_sessions' doesn't exist in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(22): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 11:49:24 --> Table 'db_pesca.fishing_sessions' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_sessions` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:49:24\', \'2023-06-13 11:49:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_sessions` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:49:24\', \'2023-06-13 11:49:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_sessions` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:49:24\', \'2023-06-13 11:49:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_sessions` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(22): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 11:49:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(22): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 11:49:42 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:49:42\', \'2023-06-13 11:49:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:49:42\', \'2023-06-13 11:49:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:49:42\', \'2023-06-13 11:49:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(22): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 11:50:25 --> Undefined property: stdClass::$id
+in APPPATH\Controllers\FishingSession.php on line 21.
+ 1 APPPATH\Controllers\FishingSession.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\laragon\\www\\pesca\\app\\Controllers\\FishingSession.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 11:50:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(23): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 11:50:32 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:50:32\', \'2023-06-13 11:50:32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:50:32\', \'2023-06-13 11:50:32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:50:32\', \'2023-06-13 11:50:32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(23): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 11:51:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 11:51:39 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:51:39\', \'2023-06-13 11:51:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:51:39\', \'2023-06-13 11:51:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'dhhdfh\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:51:39\', \'2023-06-13 11:51:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 11:54:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 11:54:05 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'ethjejej\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:54:05\', \'2023-06-13 11:54:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'ethjejej\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:54:05\', \'2023-06-13 11:54:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'ethjejej\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:54:05\', \'2023-06-13 11:54:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 11:55:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 11:55:16 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'ethjejej\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:55:16\', \'2023-06-13 11:55:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'ethjejej\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:55:16\', \'2023-06-13 11:55:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'ethjejej\', \'2023-06-14\', \'2023-06-30\', \'2023-06-13 11:55:16\', \'2023-06-13 11:55:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_session` (`description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 11:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 11:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 12:46:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE) in C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\pesca\app\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+#10 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+#11 C:\laragon\www\pesca\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pesca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-06-13 12:46:50 --> Cannot add or update a child row: a foreign key constraint fails (`db_pesca`.`fishing_session`, CONSTRAINT `FK_fishing_session_users` FOREIGN KEY (`user`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fishing_session` (`title`, `description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'sfgdfshgfdhgs\', \'hjguyyuf\', \'2023-06-13\', \'2023-06-30\', \'2023-06-13 12:46:50\', \'2023-06-13 12:46:50\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fishing_session` (`title`, `description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'sfgdfshgfdhgs\', \'hjguyyuf\', \'2023-06-13\', \'2023-06-30\', \'2023-06-13 12:46:50\', \'2023-06-13 12:46:50\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fishing_session` (`title`, `description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (\'sfgdfshgfdhgs\', \'hjguyyuf\', \'2023-06-13\', \'2023-06-30\', \'2023-06-13 12:46:50\', \'2023-06-13 12:46:50\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fishing_session` (`title`, `description`, `start_date`, `stop_date`, `created_at`, `updated_at`) VALUES (:title:, :description:, :start_date:, :stop_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FishingSession.php(24): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->save_session()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 12:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 12:58:09 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\pages\fishing_session\index.php on line 73.
+ 1 APPPATH\Views\pages\fishing_session\index.php(73): date('d/m/Y', '2023-06-13 12:47:10')
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 12:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 12:58:39 --> Undefined variable $f
+in APPPATH\Views\pages\fishing_session\index.php on line 75.
+ 1 APPPATH\Views\pages\fishing_session\index.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $f', 'C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 12:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 12:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-13 13:12:59 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\pages\fishing_session\index.php on line 71.
+ 1 APPPATH\Views\pages\fishing_session\index.php(71): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-06-13 13:12:59 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\pages\fishing_session\index.php on line 72.
+ 1 APPPATH\Views\pages\fishing_session\index.php(72): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\pesca\\app\\Views\\pages\\fishing_session\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pages/fishing_session/index', [], true)
+ 5 APPPATH\Controllers\FishingSession.php(11): view('pages/fishing_session/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FishingSession->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishingSession))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 13:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 13:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 14:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
