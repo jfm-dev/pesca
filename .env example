@@ -14,7 +14,7 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-CI_ENVIRONMENT = development
+CI_ENVIRONMENT = production
 
 #--------------------------------------------------------------------
 # APP
@@ -143,13 +143,7 @@ encryption.digest = SHA512
 # curlrequest.shareOptions = true
 
 # TWILO CONFIG
-# TWILIO_SID=AC8207dd9a3c53a76041215693e7a192bb
-# TWILIO_TOKEN=429aab60490ad64e9fb80e354d4af545
-# TWILIO_FROM=+16206986140
-
-#MOZSMS
-MOZESMS_TOKEN="2689:mkFaKy-fYVyyX-8fxm0D-wMZA9X"
-MOZESMS_SENDER="ESHOP"
-MOZESMS_API_URL="https://api.mozesms.com/v2/sms/send"
-
+TWILIO_SID=AC8207dd9a3c53a76041215693e7a192bb
+TWILIO_TOKEN=429aab60490ad64e9fb80e354d4af545
+TWILIO_FROM=+16206986140
 

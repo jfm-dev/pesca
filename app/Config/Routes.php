@@ -107,6 +107,11 @@ $routes->group('email', static function ($routes) {
     $routes->post('contact/us', 'Email::contact_us', ['as' => 'contact_us']);
 });
 
+// send sms
+$routes->group('sms', static function ($routes) {
+    $routes->get('send/to', 'SendSms::send_sms', ['as' => 'send_sms']);
+    $routes->get('send/to1/(:any)', 'Sms::sendSMS/$1', ['as' => 'send_sms1']);
+});
 // message
 $routes->group('newsletter', ['filter' => 'loginfilter'], static function ($routes) {
     $routes->get('list/message', 'Newsletter::list_message', ['as' => 'list_message']);

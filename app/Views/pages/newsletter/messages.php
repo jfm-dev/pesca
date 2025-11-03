@@ -121,10 +121,11 @@ Mensages
                                 <td>
                                     <button class="btn" data-toggle="modal" data-target="#edit-message-<?= $m->id ?>"> <i class="fa fa-edit text-primary" aria-hidden="true"></i></button>
                                     <button class="btn" data-toggle="modal" data-target="#delete-message-<?= $m->id ?>"> <i class="fa fa-trash text-danger" aria-hidden="true"></i></button>
-                                    <select name="send" class="form-control-sm" onchange="Send(this)">
+                                    <select hidden name="send" class="form-control-sm" onchange="sendSMS(this)">
                                         <option value="0">--Escolher--</option>
                                         <option value="<?= $m->id ?>">Enviar</option>
                                     </select>
+                                    <a class="btn btn-xs btn-success" href="<?=($m->type=="E-mail")? url_to('contact_us'): url_to('send_sms1',$m->message);?>"><?=($m->type=="E-mail")?'Enviar E-mail':'Enviar Mensagem';?></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -251,6 +252,9 @@ Mensages
 
 
 <script>
+
+
+
     $(document).ready(function() {
 
     });
@@ -259,13 +263,13 @@ Mensages
         // alert(value.value);
         if (value.value != 0) {
             $.ajax({
-                url: '<?= url_to('send_message') ?>',
-                method: 'post',
-                dataType: 'json',
-                data: {
-                    send: 1,
-                    id: value.value
-                },
+                url: '<?= url_to('send_sms') ?>',
+                method: 'get',
+                // dataType: 'json',
+                // data: {
+                //     send: 1,
+                //     id: value.value
+                // },
                 success: function(response) {
                     // Tratar a resposta do servidor
                     alert(response);
