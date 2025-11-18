@@ -33,7 +33,7 @@
 
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Usuário/e-mail</label>
+                        <label for="exampleInputEmail1">Usuário/e-mail/número</label>
                         <input type="text" name="user" class="form-control" id="exampleInputEmail1" placeholder="Seu nome do usuário" value="<?=old('user');?>">
                     </div>
                     <div class="form-group">
@@ -44,7 +44,7 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer float-right">
-                    <button type="submit" class="btn btn-primary btn-sm">Entrar <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    <button type="submit" class="btn btn-primary btn-sm">Login <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                 </div>
 
 
